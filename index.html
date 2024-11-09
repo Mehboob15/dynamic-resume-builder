@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dynamic Resume Builder</h1>
+
+    <!-- Resume Form -->
+    <section id="resume-form">
+        <h2>Enter Your Details</h2>
+        <form id="resumeForm">
+            <!-- Basic Info -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Job Title" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" required>
+
+            <!-- Skills -->
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" placeholder="e.g., HTML, CSS, JavaScript">
+
+            <!-- Summary -->
+            <label for="summary">Professional Summary:</label>
+            <textarea id="summary" placeholder="Brief summary about yourself"></textarea>
+
+            <!-- Experience -->
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" placeholder="List your work experience with job titles and dates"></textarea>
+
+            <!-- Education -->
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="List your degrees, schools, and graduation years"></textarea>
+
+            <!-- Submit Button -->
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+    </section>
+
+    <!-- Resume Display Section -->
+    <section id="resume-display" class="resume-section">
+        <h2>Resume</h2>
+        <div id="resumeOutput">
+            <!-- Dynamic resume content will appear here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
